@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: inventory-management
+  datasource:
+    url: jdbc:mysql://srv708.hstgr.io:3306/u794244115_shop_db
+    username: u794244115_SHOPPROD32
+    password: 5@vGHXS!Ccge
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
