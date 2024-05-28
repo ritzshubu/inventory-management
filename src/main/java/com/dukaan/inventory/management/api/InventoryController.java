@@ -37,7 +37,7 @@ public class InventoryController {
         Optional<Product> product = productService.getProductById(id);
         if (product.isPresent()) {
             Product existingProduct = product.get();
-            existingProduct.setName(productDetails.getName());
+            existingProduct.setProductName(productDetails.getProductName());
             existingProduct.setDescription(productDetails.getDescription());
             existingProduct.setCategory(productDetails.getCategory());
             existingProduct.setQuantity(productDetails.getQuantity());
